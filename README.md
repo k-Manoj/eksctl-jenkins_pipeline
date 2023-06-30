@@ -13,6 +13,17 @@ create a cluster using - eksctl create cluster --name demo-eks --region us-east-
                         - eksctl get cluster --name demo-eks --region us-east-1
                         - aws eks update-kubeconfig --name demo-eks --region us-east-1
                         - you can view the kubeconfig file by entering the below command: cat  /var/lib/jenkins/.kube/config
+### check for jenkins permissions to access docker: 
+Now Login to Jenkins EC2 instance, execute below commands:
+#Add jenkins user to Docker group
+sudo usermod -a -G docker jenkins
+#Restart Jenkins service
+sudo service jenkins restart
+#Reload system daemon files
+sudo systemctl daemon-reload
+#Restart Docker service as well
+sudo service docker stop
+sudo service docker start
 
 ### install Helm aws eks update-kubeconfig --name demo-eks --region us-east-1
 
