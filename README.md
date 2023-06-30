@@ -31,3 +31,10 @@ sudo service docker start
 2.sudo chmod 700 get_helm.sh
 3.sudo ./get_helm.sh
 4.helm version --client
+
+### create repo in ECR
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin your_acct_id.dkr.ecr.us-east-1.amazonaws.com
+https://www.cidevops.com/2020/05/how-to-setup-elastic-container-registry.html
+### 
+helm create mychart
+tree mychart - edited values.yaml by changing the image for ECR and service type LoadBalancer.
