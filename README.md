@@ -25,7 +25,8 @@ sudo systemctl daemon-reload
 sudo service docker stop
 sudo service docker start
 
-### install Helm aws eks update-kubeconfig --name demo-eks --region us-east-1
+### install Helm 
+aws eks update-kubeconfig --name demo-eks --region us-east-1
 
 1.curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3
 2.sudo chmod 700 get_helm.sh
