@@ -40,3 +40,6 @@ https://www.cidevops.com/2020/05/how-to-setup-elastic-container-registry.html
 ### 
 helm create mychart
 tree mychart - edited values.yaml by changing the image for ECR and service type LoadBalancer.
+
+### create deployment
+kubectl create ns helm-deployment
