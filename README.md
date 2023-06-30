@@ -3,3 +3,5 @@ Deploy Springboot Microservices App into Amazon EKS Cluster using Jenkins Pipeli
 
 ### for latest version of installing eksctl - 
 https://github.com/weaveworks/eksctl
+### install jenkins
+https://www.jenkins.io/doc/book/installing/linux/
