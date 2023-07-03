@@ -9,6 +9,7 @@ https://www.jenkins.io/doc/book/installing/linux/
 ### install docker and kubectl and git 
 yum install docker -y ; yum install git -y
 ### install awscli
+create role based access for ec2 machine.
 create a cluster using - eksctl create cluster --name demo-eks --region us-east-1 --nodegroup-name my-nodes --node-type t3.small --managed --nodes 2 
                         - eksctl get cluster --name demo-eks --region us-east-1
                         - aws eks update-kubeconfig --name demo-eks --region us-east-1
