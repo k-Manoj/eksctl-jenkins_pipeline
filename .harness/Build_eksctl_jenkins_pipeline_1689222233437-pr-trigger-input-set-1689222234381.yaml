@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_eksctl_jenkins_pipeline_1689222233437-pr-trigger-input-set
+  identifier: Build_eksctl_jenkins_pipeline_1689222233437prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_eksctl_jenkins_pipeline_1689222233437
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
